@@ -158,30 +158,6 @@ export default function App() {
           </div>
           <span style={{ fontSize: 20, fontWeight: 800, letterSpacing: '-0.7px', background: 'linear-gradient(to right, #ffffff, #94a3b8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>TripPlan</span>
         </div>
-
-        <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-          <button
-            onClick={() => window.location.href = `${appUrl}/login`}
-            style={{
-              padding: '10px 24px', borderRadius: 24, border: '1px solid rgba(255,255,255,0.1)',
-              background: 'transparent', cursor: 'pointer', fontSize: 14, fontWeight: 600,
-              color: '#cbd5e1', transition: 'all 0.2s'
-            }}
-          >
-            Log In
-          </button>
-          <button
-            onClick={() => window.location.href = `${appUrl}/login`}
-            style={{
-              padding: '10px 24px', borderRadius: 24, border: 'none',
-              background: 'linear-gradient(135deg, #6366F1, #a855f7)', cursor: 'pointer', fontSize: 14, fontWeight: 700,
-              color: 'white', boxShadow: '0 8px 20px rgba(99,102,241,0.25)'
-            }}
-            className="btn-hover"
-          >
-            Start Planning
-          </button>
-        </div>
       </nav>
 
       {/* Hero Section */}
@@ -514,45 +490,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Bottom CTA Block */}
-      <section style={{
-        padding: '100px 5%', textAlign: 'center',
-        background: 'linear-gradient(180deg, #07090e 0%, #040509 100%)',
-        position: 'relative', borderTop: '1px solid rgba(255,255,255,0.03)'
-      }}>
-        <div style={{
-          position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
-          width: '50%', height: '300px', background: 'radial-gradient(ellipse at center, rgba(99,102,241,0.05) 0%, rgba(7,9,14,0) 70%)',
-          zIndex: 0, pointerEvents: 'none'
-        }} />
 
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          <h2 style={{
-            fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, color: 'white',
-            letterSpacing: '-1.5px', marginBottom: 20,
-          }}>
-            Ready to design your next journey?
-          </h2>
-          <p style={{ color: '#94a3b8', fontSize: 16, marginBottom: 40, maxWidth: 500, margin: '0 auto 40px' }}>
-            Bring back the excitement of designing your own custom routes and discovery. Start planning now.
-          </p>
-
-          <button
-            onClick={() => window.location.href = `${appUrl}/login`}
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              padding: '16px 40px', borderRadius: 30, border: 'none',
-              background: 'linear-gradient(135deg, #6366F1, #818cf8)', cursor: 'pointer',
-              fontSize: 16, fontWeight: 700, color: 'white',
-              boxShadow: '0 8px 25px rgba(99,102,241,0.3)'
-            }}
-            className="btn-hover"
-          >
-            Start Designing Your Plan
-            <ArrowRight size={16} />
-          </button>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer style={{
