@@ -34,7 +34,6 @@ const FAQS = [
 ]
 
 export default function App() {
-  const appUrl = import.meta.env.VITE_APP_URL || 'https://app.tripplan.app'
   const [waitlistCount, setWaitlistCount] = useState<number | null>(null)
   const [email, setEmail] = useState('')
   const [joinedWaitlist, setJoinedWaitlist] = useState(false)
